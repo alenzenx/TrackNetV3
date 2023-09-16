@@ -21,7 +21,7 @@ Resnet版本的TracknetV2(https://github.com/Chang-Chia-Chi/TrackNet-Badminton-T
 
 安裝步驟 : 
 
-獲取小樣本訓練後的精準權重
+獲取小樣本訓練後的最佳權重
 https://drive.google.com/file/d/1qh9IiRzZYRY6PbHBGPb6CS0h2AwXPt-d/view?usp=sharing
 
 ### 請先檢查有沒有 tutorial-env 的資料夾，有的話請先整個刪除，重新安裝虛擬環境
@@ -47,8 +47,8 @@ pip install -r requirements.txt                                                 
 
 ### 如何自己做數據集:
 
-標註video:(會產生csv)
-python imgLabel.py --label_video_path=你要標註的影片
+### 標註video:(會產生csv)
+`python imgLabel.py --label_video_path=你要標註的影片`
 
 全部的影片都標註完成後，請自行分開訓練集與驗證集 並且把 成對的訓練集影片與csv檔 丟到raw_data資料夾 ， 成對的驗證集影片與csv檔 丟到raw_data2資料夾，
 並且 TrackNetV2_Dataset資料夾請保持下列形式:
@@ -76,22 +76,22 @@ target_folder = 'TrackNetV2_Dataset/test'
 
 )
 
-轉換後 預處理影像:
-python preprocess.py
+### 轉換後 預處理影像:
+`python preprocess.py`
 
 ### 注意 !!!!! 如果 TrackNetV2_Dataset 裡 已經有 訓練集(train)與驗證集(test) 且2個資料夾裡都有match1、match2...資料夾，即可開始訓練 (如果剛拿到專案已經存在的話，代表我已經標註好了，你可以選擇使用我標註的直接訓練，也可以自行標註)
 
-訓練:(batchsize請注意:專屬GPU記憶體的大小)
-python train.py --num_frame 3 --epochs 30 --batch_size 8 --learning_rate 0.001 --save_dir exp
+### 訓練:(batchsize請注意:專屬GPU記憶體的大小)
+`python train.py --num_frame 3 --epochs 30 --batch_size 8 --learning_rate 0.001 --save_dir exp`
 
-預測:
-python predict.py --video_file=test.mp4 --model_file=exp/model_best.pt --save_dir pred_result
+### 預測:
+`python predict.py --video_file=test.mp4 --model_file=exp/model_best.pt --save_dir pred_result`
 
-預測後使用: 去躁 及 smooth羽球預測的曲線
-python denoise.py --input_csv=pred_result/test_ball.csv
+### 預測後使用: 去躁 及 smooth羽球預測的曲線
+`python denoise.py --input_csv=pred_result/test_ball.csv`
 
-smooth羽球預測的曲線後: predict優化後的影片
-python show_trajectory.py --video_file test.mp4 --csv_file pred_result/test_ball.csv --save_dir pred_result
+### smooth羽球預測的曲線後: predict優化後的影片
+`python show_trajectory.py --video_file test.mp4 --csv_file pred_result/test_ball.csv --save_dir pred_result`
 
-smooth羽球預測的曲線後: 預測擊球時刻
-python event_detection.py --input_csv=pred_result/test_ball.csv
+### smooth羽球預測的曲線後: 預測擊球時刻
+`python event_detection.py --input_csv=pred_result/test_ball.csv`
