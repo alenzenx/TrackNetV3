@@ -86,7 +86,7 @@ TrackNetV2_Dataset資料夾請保持下列形式:
 
 `target_folder = 'TrackNetV2_Dataset/test'`
 
-然後運行 zz_Tracknet_badminton_DataConvert.py
+然後運行 `python zz_Tracknet_badminton_DataConvert.py`
 
 ### 轉換後 預處理影像:
 `python preprocess.py`
