@@ -1,4 +1,4 @@
-### TracknetV3
+# TracknetV3 : beyond TracknetV2
 
 TracknetV3是參考
 原始版本的TracknetV2(https://github.com/wolfyeva/TrackNetV2)
@@ -6,7 +6,7 @@ TracknetV3是參考
 Resnet版本的TracknetV2(https://github.com/Chang-Chia-Chi/TrackNet-Badminton-Tracking-tensorflow2)
 加以改進的Tracknet版本，
 
-### 擁有目前Tracknet體系中最先進的精準度!
+# 擁有目前Tracknet體系中最先進的精準度!
 
 
 
