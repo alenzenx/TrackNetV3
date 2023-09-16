@@ -50,14 +50,17 @@ tensorflow安裝前，要下載並安裝Microsoft Visual C++ Redistributable for
 ### 標註video:(會產生csv)
 `python imgLabel.py --label_video_path=你要標註的影片`
 
+### 標註方法(https://github.com/Chang-Chia-Chi/TrackNet-Badminton-Tracking-tensorflow2):
+![image](https://github.com/alenzenx/TracknetV3/blob/main/%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8A%20for%20imgLabel.png)  
+
 全部的影片都標註完成後，請自行分開訓練集與驗證集 並且把 成對的訓練集影片與csv檔 丟到raw_data資料夾 ， 成對的驗證集影片與csv檔 丟到raw_data2資料夾，
 並且 TrackNetV2_Dataset資料夾請保持下列形式:
 
-TrackNetV2_Dataset
-            ├─ train
-            |    
-            |
-            └─ test
+        TrackNetV2_Dataset
+                    ├─ train
+                    |    
+                    |
+                    └─ test
 
 除了上述的train與test，TrackNetV2_Dataset底下的其他檔案請都刪除(包括train底下的資料夾與test底下的資料夾)
 
