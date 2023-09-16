@@ -68,22 +68,24 @@ tensorflow安裝前，要下載並安裝Microsoft Visual C++ Redistributable for
 除了上述的train與test，TrackNetV2_Dataset底下的其他檔案請都刪除(包括train底下的資料夾與test底下的資料夾)
 
 ### 運行 zz_Tracknet_badminton_DataConvert.py : 
-(注意:運行前，
-如果是要轉換訓練集，請在 zz_Tracknet_badminton_DataConvert.py 裡更改
+注意:運行前，如果是要轉換訓練集，請在 zz_Tracknet_badminton_DataConvert.py 裡更改
 
 `original_raw_data = 'raw_data'`
+
 `target_folder = 'TrackNetV2_Dataset/train'`
 
 如果是要轉換驗證集，請在 zz_Tracknet_badminton_DataConvert.py 裡更改
 
 `original_raw_data = 'raw_data2'`
+
 `target_folder = 'TrackNetV2_Dataset/test'`
-)
+
 
 ### 轉換後 預處理影像:
 `python preprocess.py`
 
-### 注意 !!!!! 如果 TrackNetV2_Dataset 裡 已經有 訓練集(train)與驗證集(test) 且2個資料夾裡都有match1、match2...資料夾，即可開始訓練 (如果剛拿到專案已經存在的話，代表我已經標註好了，你可以選擇使用我標註的直接訓練，也可以自行標註)
+### 注意 !!!!! 如果 TrackNetV2_Dataset 裡 已經有 訓練集(train)與驗證集(test) 且2個資料夾裡都有match1、match2...資料夾，即可開始訓練 
+### (如果剛拿到專案已經存在的話，代表我已經標註好了，你可以選擇使用我標註的直接訓練，也可以自行標註)
 
 ### 訓練:(batchsize請注意:專屬GPU記憶體的大小)
 `python train.py --num_frame 3 --epochs 30 --batch_size 8 --learning_rate 0.001 --save_dir exp`
