@@ -89,7 +89,7 @@ tensorflow安裝前，要下載並安裝Microsoft Visual C++ Redistributable for
 ### 注意 !!!!! 如果 TrackNetV2_Dataset 裡 已經有 訓練集(train)與驗證集(test) 且2個資料夾裡都有match1、match2...資料夾，即可開始訓練 
 ### (如果剛拿到專案已經存在的話，代表我已經標註好了，你可以選擇使用我標註的直接訓練，也可以自行標註)
 
-### 訓練:(batchsize請注意:專屬GPU記憶體的大小)
+### 訓練:(batchsize請注意:專屬GPU記憶體的大小，my GPU is Nvidia RTX3060 12G)
 `python train.py --num_frame 3 --epochs 30 --batch_size 4 --learning_rate 0.001 --save_dir exp`
 
 ### 預測:
