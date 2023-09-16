@@ -1,11 +1,28 @@
-如果在 windows native 環境 -> python 3.9.4 、cuda 11.7 、cudnn 8.9.0(cudnn裡的檔案請全部拖進cuda中，不要像 https://medium.com/ching-i/win10-%E5%AE%89%E8%A3%9D-cuda-cudnn-%E6%95%99%E5%AD%B8-c617b3b76deb 這篇文章每項只拖1個檔案進去，請拖該資料夾的全部檔案，不然tensorflow可能會報錯) 
+### TracknetV3
+
+TracknetV3是參考
+原始版本的TracknetV2(https://github.com/wolfyeva/TrackNetV2)
+及
+Resnet版本的TracknetV2(https://github.com/Chang-Chia-Chi/TrackNet-Badminton-Tracking-tensorflow2)
+加以改進的Tracknet版本，
+
+### 擁有目前Tracknet體系中最先進的精準度!
+
+
+
+
+
+如果在 windows native 環境下建議 -> python=3.9.4 、cuda=11.7 、cudnn=8.9.0(cudnn裡的檔案請全部拖進cuda中，不要像 https://medium.com/ching-i/win10-%E5%AE%89%E8%A3%9D-cuda-cudnn-%E6%95%99%E5%AD%B8-c617b3b76deb 這篇文章每項只拖1個檔案進去，請拖該資料夾的全部檔案，不然tensorflow可能會報錯) 
 
 例如: 把 C:\Users\<username>\Downloads\cuda\bin\cudnn64_7.dll 複製到 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin
 修正: 把 C:\Users\<username>\Downloads\cuda\bin\ 裡面的所有檔案 複製到 C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin
 
-(2023/5/15 windows native最頂配)
+(此配置為 2023/5/15 windows native最頂配)
 
 安裝步驟 : 
+
+獲取小樣本訓練後的精準權重
+https://drive.google.com/file/d/1qh9IiRzZYRY6PbHBGPb6CS0h2AwXPt-d/view?usp=sharing
 
 ### 請先檢查有沒有 tutorial-env 的資料夾，有的話請先整個刪除，重新安裝虛擬環境
 python 3.9.4安裝時要 Add Python 3.9 to PATH
