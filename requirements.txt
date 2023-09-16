@@ -1,0 +1,7 @@
+pandas
+opencv-python
+tqdm
+parse
+piexif
+matplotlib
+scipy
