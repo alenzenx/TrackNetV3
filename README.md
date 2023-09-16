@@ -30,8 +30,11 @@ tensorflow安裝前，請先在 Windows 上啟用長路徑
 tensorflow安裝前，要下載並安裝Microsoft Visual C++ Redistributable for Visual Studio 2015、2017 和 2019 。
 
 `python -m venv tutorial-env`                                                                            (安裝虛擬環境)
+
 `pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117`           (安裝pytorch(cuda11.7))
+
 `pip install "tensorflow<2.11"`                                                                          (安裝tensorflow-GPU(大概會安裝tensorflow==2.10.0))
+
 `pip install -r requirements.txt`                                                                        (安裝其他套件)
 
 
@@ -67,10 +70,12 @@ tensorflow安裝前，要下載並安裝Microsoft Visual C++ Redistributable for
 ### 運行 zz_Tracknet_badminton_DataConvert.py : 
 (注意:運行前，
 如果是要轉換訓練集，請在 zz_Tracknet_badminton_DataConvert.py 裡更改
+
 `original_raw_data = 'raw_data'`
 `target_folder = 'TrackNetV2_Dataset/train'`
 
 如果是要轉換驗證集，請在 zz_Tracknet_badminton_DataConvert.py 裡更改
+
 `original_raw_data = 'raw_data2'`
 `target_folder = 'TrackNetV2_Dataset/test'`
 )
