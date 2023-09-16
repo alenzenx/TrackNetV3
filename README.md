@@ -67,12 +67,12 @@ tensorflow安裝前，要下載並安裝Microsoft Visual C++ Redistributable for
 ### 運行 zz_Tracknet_badminton_DataConvert.py : 
 (注意:運行前，
 如果是要轉換訓練集，請在 zz_Tracknet_badminton_DataConvert.py 裡更改
-original_raw_data = 'raw_data'
-target_folder = 'TrackNetV2_Dataset/train'
+`original_raw_data = 'raw_data'`
+`target_folder = 'TrackNetV2_Dataset/train'`
 
 如果是要轉換驗證集，請在 zz_Tracknet_badminton_DataConvert.py 裡更改
-original_raw_data = 'raw_data2'
-target_folder = 'TrackNetV2_Dataset/test'
+`original_raw_data = 'raw_data2'`
+`target_folder = 'TrackNetV2_Dataset/test'`
 )
 
 ### 轉換後 預處理影像:
