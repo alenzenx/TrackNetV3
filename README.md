@@ -6,10 +6,12 @@ TracknetV3是參考
 Resnet版本的TracknetV2(https://github.com/Chang-Chia-Chi/TrackNet-Badminton-Tracking-tensorflow2)
 加以改進的Tracknet版本，
 
-# 擁有目前Tracknet體系中最先進的精準度!
-
-
-
+# 擁有目前Tracknet體系中最先進的精準度，且對於小樣本同樣有最佳的精準度!
+# It has the most advanced accuracy in the current Tracknet system, and also has the best accuracy for Few Shot!
+## Our:
+![image](https://github.com/alenzenx/TracknetV3/blob/main/%E6%9C%80%E6%96%B0%E6%88%90%E6%9E%9C%E8%88%87%E5%8E%9F%E5%A7%8BTracknetV2%20model%E5%B0%8D%E6%AF%94/TracknetV2_encoder%E6%94%B9%E6%88%90%E5%A4%9A%E5%8D%B7%E7%A9%8Dconcat%E4%B8%94%E5%8A%A0%E4%B8%BB%E7%B7%9Achannel%20attention%E5%BE%8C%20concat%E4%B9%8B%E5%89%8D%E4%B9%9F%E5%8A%A0%E5%85%A5channel%20attention/performance.jpg)
+## Original:
+![image](https://github.com/alenzenx/TracknetV3/blob/main/%E6%9C%80%E6%96%B0%E6%88%90%E6%9E%9C%E8%88%87%E5%8E%9F%E5%A7%8BTracknetV2%20model%E5%B0%8D%E6%AF%94/TracknetV2%E5%8E%9F%E5%A7%8B%E8%A8%93%E7%B7%B4/performance.jpg)
 
 
 如果在 windows native 環境下建議 -> python=3.9.4 、cuda=11.7 、cudnn=8.9.0(cudnn裡的檔案請全部拖進cuda中，不要像 https://medium.com/ching-i/win10-%E5%AE%89%E8%A3%9D-cuda-cudnn-%E6%95%99%E5%AD%B8-c617b3b76deb 這篇文章每項只拖1個檔案進去，請拖該資料夾的全部檔案，不然tensorflow可能會報錯) 
