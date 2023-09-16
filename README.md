@@ -90,7 +90,7 @@ tensorflow安裝前，要下載並安裝Microsoft Visual C++ Redistributable for
 ### (如果剛拿到專案已經存在的話，代表我已經標註好了，你可以選擇使用我標註的直接訓練，也可以自行標註)
 
 ### 訓練:(batchsize請注意:專屬GPU記憶體的大小)
-`python train.py --num_frame 3 --epochs 30 --batch_size 8 --learning_rate 0.001 --save_dir exp`
+`python train.py --num_frame 3 --epochs 30 --batch_size 4 --learning_rate 0.001 --save_dir exp`
 
 ### 預測:
 `python predict.py --video_file=test.mp4 --model_file=exp/model_best.pt --save_dir pred_result`
