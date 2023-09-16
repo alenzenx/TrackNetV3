@@ -59,7 +59,7 @@ tensorflow安裝前，要下載並安裝Microsoft Visual C++ Redistributable for
 ![image](https://github.com/alenzenx/TracknetV3/blob/main/%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8A%20for%20imgLabel.png)
 
 
-全部的影片都標註完成後，請自行分開訓練集與驗證集 並且把 成對的訓練集影片與csv檔丟到raw_data資料夾，成對的驗證集影片與csv檔丟到raw_data2資料夾，
+全部的影片都標註完成後，請自行分開訓練集與驗證集 並且把 成對的train set:影片與csv檔丟到raw_data資料夾，成對的test set:影片與csv檔丟到raw_data2資料夾，
 ### 注意 !!!!! 如果剛下載專案raw_data資料夾與raw_data2已經存在檔案的話，代表我已經標註好了，你可以選擇使用我標註的直接訓練，也可以自行標註。
 
 TrackNetV2_Dataset資料夾請保持下列形式:
