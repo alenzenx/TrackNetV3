@@ -8,6 +8,7 @@ Resnet版本的TracknetV2(https://github.com/Chang-Chia-Chi/TrackNet-Badminton-T
 
 # 擁有目前Tracknet體系中最先進的精準度，且對於小樣本同樣有最佳的精準度!
 # It has the most advanced accuracy in the current Tracknet system, and also has the best accuracy for Few Shot!
+在同樣的資料集下:
 ## Ours: 90.53%
 ![image](https://github.com/alenzenx/TracknetV3/blob/main/%E6%9C%80%E6%96%B0%E6%88%90%E6%9E%9C%E8%88%87%E5%8E%9F%E5%A7%8BTracknetV2%20model%E5%B0%8D%E6%AF%94/TracknetV2_encoder%E6%94%B9%E6%88%90%E5%A4%9A%E5%8D%B7%E7%A9%8Dconcat%E4%B8%94%E5%8A%A0%E4%B8%BB%E7%B7%9Achannel%20attention%E5%BE%8C%20concat%E4%B9%8B%E5%89%8D%E4%B9%9F%E5%8A%A0%E5%85%A5channel%20attention/performance.jpg)
 ## Original: 88.49%
