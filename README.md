@@ -50,7 +50,7 @@ tensorflow安裝前，要下載並安裝Microsoft Visual C++ Redistributable for
 
 # 運行指令:
 
-### 如何自己做數據集:
+## 如何自己做數據集:
 
 ### 標註video:(會產生csv)
 `python imgLabel.py --label_video_path=你要標註的影片`
@@ -90,6 +90,8 @@ TrackNetV2_Dataset資料夾請保持下列形式:
 `python preprocess.py`
 
 ### 注意 !!!!! 如果 TrackNetV2_Dataset 裡 已經有 訓練集(train)與驗證集(test) 且2個資料夾裡都有match1、match2...資料夾，即可開始訓練 
+
+## 如何開始訓練:
 
 ### 訓練:(batchsize請注意:專屬GPU記憶體的大小，my GPU is Nvidia RTX3060 12G)
 `python train.py --num_frame 3 --epochs 30 --batch_size 4 --learning_rate 0.001 --save_dir exp`
