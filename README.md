@@ -1,8 +1,10 @@
-# TrackNetV3 : beyond TrackNetV2
+# TrackNetV3 : beyond TrackNetV2 and First TrackNet using Attention
 
 > 擁有目前TrackNet追蹤網路中最先進的精準度，且對於小樣本同樣有最佳的精準度!
 >
 > It has the most advanced accuracy in the current TrackNet system, and also has the best accuracy for Few Shot!
+>
+> TrackNet is a semantic segmentation tracking network.
 >
 > V2 跟 V3 是在同樣的小樣本資料集訓練(以下 train set=32421張 valid set=3717張 test set=11118張)
 
