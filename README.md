@@ -4,16 +4,20 @@
 >
 > It has the most advanced accuracy in the current TrackNet system, and also has the best accuracy for Few Shot!
 >
-> V2跟V3是在同樣的小樣本資料集訓練(以下train set=32421張 valid set=3717張 test set=11118張)
+> V2 跟 V3 是在同樣的小樣本資料集訓練(以下 train set=32421張 valid set=3717張 test set=11118張)
 
 ## TrackNetV3 : 90.53%
+
 **model from : `model.py`**
+
 ![image](https://github.com/alenzenx/TracknetV3/blob/main/%E6%9C%80%E6%96%B0%E6%88%90%E6%9E%9C%E8%88%87%E5%8E%9F%E5%A7%8BTracknetV2%20model%E5%B0%8D%E6%AF%94/TracknetV2_encoder%E6%94%B9%E6%88%90%E5%A4%9A%E5%8D%B7%E7%A9%8Dconcat%E4%B8%94%E5%8A%A0%E4%B8%BB%E7%B7%9Achannel%20attention%E5%BE%8C%20concat%E4%B9%8B%E5%89%8D%E4%B9%9F%E5%8A%A0%E5%85%A5channel%20attention/performance.jpg?raw=true)
 
 [點擊以獲取權重 : 90.53%](https://drive.google.com/file/d/1w_HRLUyMMkCXxj4JXNpf4UnR2ReJfkN1/view?usp=sharing)
 
 ## TrackNetV2 Original : 88.49%
+
 **model from : `model原始檔.py`**
+
 ![image](https://github.com/alenzenx/TracknetV3/blob/main/%E6%9C%80%E6%96%B0%E6%88%90%E6%9E%9C%E8%88%87%E5%8E%9F%E5%A7%8BTracknetV2%20model%E5%B0%8D%E6%AF%94/TracknetV2%E5%8E%9F%E5%A7%8B%E8%A8%93%E7%B7%B4/performance.jpg?raw=true)
 
 # 環境建議:
@@ -32,8 +36,8 @@
 
 # 安裝步驟 : 
 
-> 請先檢查有沒有 tutorial-env 的資料夾，有的話請先整個刪除，重新安裝虛擬環境
-
+>請先檢查有沒有 tutorial-env 的資料夾，有的話請先整個刪除，重新安裝虛擬環境
+>
 > only Windows :
 > 
 >1.     python 3.9.4安裝時要 Add Python 3.9 to PATH
@@ -76,7 +80,11 @@ python imgLabel.py --label_video_path=你要標註的影片
 ![image](https://github.com/alenzenx/TracknetV3/blob/main/%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8A%20for%20imgLabel.png?raw=true)
 
 
-全部的影片都標註完成後，請自行分開訓練集與驗證集 並且把 成對的train set:影片與csv檔丟到raw_data資料夾，成對的test set:影片與csv檔丟到raw_data2資料夾
+全部的影片都標註完成後，請自行分開`訓練集`與`測試集(驗證集)`
+
+> 1.成對的`訓練集`:影片與csv檔丟到`raw_data`資料夾
+>
+> 2.成對的`測試集(驗證集)`:影片與csv檔丟到`raw_data2`資料夾
 
 **注意! 如果剛下載專案`raw_data`資料夾與`raw_data2`已經存在檔案的話，代表我已經標註好了，你可以選擇使用我標註的直接訓練，也可以自行標註。**
 
@@ -127,10 +135,9 @@ python preprocess.py
 **注意! 如果 TrackNetV2_Dataset 裡已經有`訓練集`與`測試集(驗證集)`且2個資料夾裡都有match1、match2...資料夾，即可開始訓練。**
 
 ### 備註:
->1. zz_Tracknet_badminton_DataConvert.py的檔案是 將imgLabel.py生成的raw_data 轉換成 Tracknetv2-main 所需要的格式。
+1. zz_Tracknet_badminton_DataConvert.py的檔案是 將imgLabel.py生成的raw_data 轉換成 Tracknetv2-main 所需要的格式。
 因為原始資料的標註軟體沒給，所以用imgLabel.py代替，所以需要一個 zz_Tracknet_badminton_DataConvert.py 來轉格式。
->
->2. 在Windows下請不要用python3，請使用python
+2. 在Windows下請不要用python3，請使用python
 
 # 如何開始訓練:
 
