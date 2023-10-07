@@ -10,7 +10,7 @@
 
 **model from : `model.py`**
 
-![image](https://github.com/alenzenx/TracknetV3/blob/main/%E6%9C%80%E6%96%B0%E6%88%90%E6%9E%9C%E8%88%87%E5%8E%9F%E5%A7%8BTracknetV2%20model%E5%B0%8D%E6%AF%94/TracknetV2_encoder%E6%94%B9%E6%88%90%E5%A4%9A%E5%8D%B7%E7%A9%8Dconcat%E4%B8%94%E5%8A%A0%E4%B8%BB%E7%B7%9Achannel%20attention%E5%BE%8C%20concat%E4%B9%8B%E5%89%8D%E4%B9%9F%E5%8A%A0%E5%85%A5channel%20attention/performance.jpg?raw=true)
+![image](https://github.com/alenzenx/TracknetV3/blob/main/%E6%9C%80%E6%96%B0%E6%88%90%E6%9E%9C%E8%88%87%E5%8E%9F%E5%A7%8BTracknetV2%20model%E5%B0%8D%E6%AF%94/TrackNetV3/performance.jpg?raw=true)
 
 [點擊以獲取權重 : 90.53%](https://drive.google.com/file/d/1w_HRLUyMMkCXxj4JXNpf4UnR2ReJfkN1/view?usp=sharing)
 
@@ -18,7 +18,7 @@
 
 **model from : `model原始檔.py`**
 
-![image](https://github.com/alenzenx/TracknetV3/blob/main/%E6%9C%80%E6%96%B0%E6%88%90%E6%9E%9C%E8%88%87%E5%8E%9F%E5%A7%8BTracknetV2%20model%E5%B0%8D%E6%AF%94/TracknetV2%E5%8E%9F%E5%A7%8B%E8%A8%93%E7%B7%B4/performance.jpg?raw=true)
+![image](https://github.com/alenzenx/TracknetV3/blob/main/%E6%9C%80%E6%96%B0%E6%88%90%E6%9E%9C%E8%88%87%E5%8E%9F%E5%A7%8BTracknetV2%20model%E5%B0%8D%E6%AF%94/TrackNetV2/performance.jpg?raw=true)
 
 # 環境建議:
 > os system support : 
