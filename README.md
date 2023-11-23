@@ -22,11 +22,11 @@ Testset : https://github.com/alenzenx/TrackNetV3/tree/main/raw_data2
 
 ## TrackNetV3 best accuracy in small sample dataset: 90.53%
 
+[Click to obtain training weights | 點擊以獲取權重 : 90.53%](https://drive.google.com/file/d/1NDe_Wsl6n9l8qLBywjzCnBHcWAQ_Bqq5/view?usp=sharing)
+
 **model from : [model.py](https://github.com/alenzenx/TrackNetV3/blob/main/model.py)**
 
 ![image](https://github.com/alenzenx/TracknetV3/blob/main/%E6%9C%80%E6%96%B0%E6%88%90%E6%9E%9C%E8%88%87%E5%8E%9F%E5%A7%8BTracknetV2%20model%E5%B0%8D%E6%AF%94/TrackNetV3/performance.jpg?raw=true)
-
-[Click to obtain training weights | 點擊以獲取權重 : 90.53%](https://drive.google.com/file/d/1NDe_Wsl6n9l8qLBywjzCnBHcWAQ_Bqq5/view?usp=sharing)
 
 ## TrackNetV2 best accuracy in small sample dataset: 88.49%
 
@@ -35,28 +35,26 @@ Testset : https://github.com/alenzenx/TrackNetV3/tree/main/raw_data2
 ![image](https://github.com/alenzenx/TracknetV3/blob/main/%E6%9C%80%E6%96%B0%E6%88%90%E6%9E%9C%E8%88%87%E5%8E%9F%E5%A7%8BTracknetV2%20model%E5%B0%8D%E6%AF%94/TrackNetV2/performance.jpg?raw=true)
 
 # 環境建議:
-> os system support : 
->
->1.     windows 10 
->2.     windows 11
->3.     ubuntu
->4.     others Linux
->
-> python = 3.7.9~3.9.4
->
-> cuda = 11.7 or others
->
-> cudnn = 8.9.0 or others (在windows下cudnn裡的檔案請全部拖進cuda中，不然tensorflow可能會報錯) 
+os system support : 
+1.     windows 10 
+2.     windows 11
+3.     ubuntu
+4.     others Linux
+
+python = 3.7.9~3.9.4
+
+cuda = 11.7 or others
+
+cudnn = 8.9.0 or others (在windows下cudnn裡的檔案請全部拖進cuda中，不然tensorflow可能會報錯) 
 
 # 安裝步驟 : 
 
->請先檢查有沒有 tutorial-env 的資料夾，有的話請先整個刪除，重新安裝虛擬環境
->
-> only Windows :
-> 
->1.     python 3.9.4安裝時要 Add Python 3.9 to PATH
->2.     tensorflow安裝前，請先在 Windows 上啟用長路徑
->3.     tensorflow安裝前，要下載並安裝Microsoft Visual C++ Redistributable for Visual Studio 2015、2017 和 2019 。
+請先檢查有沒有 tutorial-env 的資料夾，有的話請先整個刪除，重新安裝虛擬環境
+
+only Windows :
+1.     python 3.9.4安裝時要 Add Python 3.9 to PATH
+2.     tensorflow安裝前，請先在 Windows 上啟用長路徑
+3.     tensorflow安裝前，要下載並安裝Microsoft Visual C++ Redistributable for Visual Studio 2015、2017 和 2019 。
 
 安裝虛擬環境 : 
 
@@ -114,7 +112,7 @@ TrackNetV2_Dataset資料夾請保持下列形式:
 
 ### 轉換資料集的格式 : 運行 `zz_Tracknet_badminton_DataConvert.py`
 
-> 如果是要轉換`訓練集`
+### 如果是要轉換訓練集
 
 請在 `zz_Tracknet_badminton_DataConvert.py ` 裡更改
 
@@ -127,7 +125,7 @@ target_folder = 'TrackNetV2_Dataset/train'
 ```
 然後運行 `python zz_Tracknet_badminton_DataConvert.py`
 
-> 如果是要轉換`測試集(驗證集)`
+### 如果是要轉換測試集(驗證集)
 
 請在 `zz_Tracknet_badminton_DataConvert.py` 裡更改
 
@@ -141,7 +139,7 @@ target_folder = 'TrackNetV2_Dataset/test'
 
 然後運行 `python zz_Tracknet_badminton_DataConvert.py`
 
-### 轉換後預處理影像:
+### 轉換後檢查及預處理影像:
 ```shell
 python preprocess.py
 ```
@@ -155,7 +153,7 @@ python preprocess.py
 
 # 如何開始訓練:
 
->請注意訓練時的batchsize，會關係到專屬GPU記憶體的大小，
+請注意訓練時的batchsize，會關係到專屬GPU記憶體的大小，
 我使用的 GPU 是 Nvidia RTX3060 12G ，我使用的batchsize=4
 
 ### 訓練:
