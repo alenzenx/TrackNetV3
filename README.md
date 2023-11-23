@@ -1,4 +1,4 @@
-# TrackNetV3 : beyond TrackNetV2 and First TrackNet using Attention
+# TrackNetV3 : beyond TrackNetV2 ,and First TrackNet using Attention
 
 TrackNet is a semantic segmentation tracking network.
 
