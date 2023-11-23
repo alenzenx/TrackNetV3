@@ -100,7 +100,8 @@ while success:
             else:
                 frame_count += 1
                 frame_queue.append(frame)
-        assert len(frame_queue) % num_frame == 0
+        if len(frame_queue) % num_frame != 0:
+            continue
     
     x = get_frame_unit(frame_queue, num_frame)
     

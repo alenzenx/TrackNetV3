@@ -1,24 +1,36 @@
 # TrackNetV3 : beyond TrackNetV2 and First TrackNet using Attention
 
-> 擁有目前TrackNet追蹤網路中最先進的精準度，且對於小樣本同樣有最佳的精準度!
->
-> It has the most advanced accuracy in the current TrackNet system, and also has the best accuracy for Few Shot!
->
-> TrackNet is a semantic segmentation tracking network.
->
-> V2 跟 V3 是在同樣的小樣本資料集訓練(以下 train set=32421張 valid set=3717張 test set=11118張)
+TrackNet is a semantic segmentation tracking network.
 
-## TrackNetV3 : 90.53%
+It has the most advanced accuracy in the current TrackNet system, and also has the best accuracy for Few Shot Learning!
 
-**model from : `model.py`**
+擁有目前TrackNet追蹤網路中最先進的精準度，且對於小樣本同樣有最佳的精準度!
+
+V2 and V3 are trained on the same small sample dataset (with the following distributions: training set = 32,421 images, validation set = 3,717 images, test set = 11,118 images).
+
+V2 跟 V3 是在同樣的小樣本資料集訓練(以下 train set=32421張 valid set=3717張 test set=11118張)
+
+Trainset : https://github.com/alenzenx/TrackNetV3/tree/main/raw_data
+
+Testset : https://github.com/alenzenx/TrackNetV3/tree/main/raw_data2
+
+## TrackNetV3 architecture
+![image](TrackNetV3結構圖.png?raw=true)
+## Key component
+![image](重要結構.png?raw=true)
+
+
+## TrackNetV3 best accuracy in small sample dataset: 90.53%
+
+**model from : [model.py](https://github.com/alenzenx/TrackNetV3/blob/main/model.py)**
 
 ![image](https://github.com/alenzenx/TracknetV3/blob/main/%E6%9C%80%E6%96%B0%E6%88%90%E6%9E%9C%E8%88%87%E5%8E%9F%E5%A7%8BTracknetV2%20model%E5%B0%8D%E6%AF%94/TrackNetV3/performance.jpg?raw=true)
 
-[點擊以獲取權重 : 90.53%](https://drive.google.com/file/d/1w_HRLUyMMkCXxj4JXNpf4UnR2ReJfkN1/view?usp=sharing)
+[Click to obtain training weights | 點擊以獲取權重 : 90.53%](https://drive.google.com/file/d/1NDe_Wsl6n9l8qLBywjzCnBHcWAQ_Bqq5/view?usp=sharing)
 
-## TrackNetV2 Original : 88.49%
+## TrackNetV2 best accuracy in small sample dataset: 88.49%
 
-**model from : `model原始檔.py`**
+**model from : [model原始檔.py](https://github.com/alenzenx/TrackNetV3/blob/main/model%E5%8E%9F%E5%A7%8B%E6%AA%94.py)**
 
 ![image](https://github.com/alenzenx/TracknetV3/blob/main/%E6%9C%80%E6%96%B0%E6%88%90%E6%9E%9C%E8%88%87%E5%8E%9F%E5%A7%8BTracknetV2%20model%E5%B0%8D%E6%AF%94/TrackNetV2/performance.jpg?raw=true)
 

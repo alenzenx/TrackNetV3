@@ -141,12 +141,14 @@ def smooth(path):
                     x_test_2nd[i:i+4]=[0,0,0,0]
                     y_test_2nd[i:i+4]=[0,0,0,0]
                     abnormal2[i:i+4]=['2bias4','2bias4','2bias4','2bias4']
-            elif bf_dis[i+4]>30 and vis2[i+1:i+5]==[1,1,1,1]:
+        if i + 4 < len(df):
+            if bf_dis[i+4]>30 and vis2[i+1:i+5]==[1,1,1,1]:
                 if af_dis[i+1]<30 and af_dis[i+2]<30 and af_dis[i+3]<30 and af_dis[i+4]<30:
                     x_test_2nd[i:i+5]=[0,0,0,0,0]
                     y_test_2nd[i:i+5]=[0,0,0,0,0]
                     abnormal2[i:i+5]=['2bias5','2bias5','2bias5','2bias5','2bias5']
-            elif bf_dis[i+5]>30 and vis2[i+1:i+6]==[1,1,1,1,1]:
+        if i + 5 < len(df):
+            if bf_dis[i+5]>30 and vis2[i+1:i+6]==[1,1,1,1,1]:
                 if af_dis[i+1]<30 and af_dis[i+2]<30 and af_dis[i+3]<30 and af_dis[i+4]<30 and af_dis[i+5]<30:
                     x_test_2nd[i:i+6]=[0,0,0,0,0,0]
                     y_test_2nd[i:i+6]=[0,0,0,0,0,0]
