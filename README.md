@@ -14,6 +14,8 @@ Trainset : https://github.com/alenzenx/TrackNetV3/tree/main/raw_data
 
 Testset : https://github.com/alenzenx/TrackNetV3/tree/main/raw_data2
 
+Paper : [Click to obtain TrackNetV3 paper](https://drive.google.com/file/d/1XIxRfKbLY684eixlc16gohjbg_JQsI7s/view?usp=sharing)
+
 ## TrackNetV3 architecture
 ![image](TrackNetV3結構圖.png?raw=true)
 ## Key component
