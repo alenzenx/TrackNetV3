@@ -230,9 +230,9 @@ def compute_acc(evaluation):
     """
     (TP, TN, FP1, FP2, FN) = evaluation
     try:
-	    accuracy = (TP + TN) / (TP + TN + FP1 + FP2 + FN)
+        accuracy = (TP + TN) / (TP + TN + FP1 + FP2 + FN)  
     except:
-	    accuracy = 0
+        accuracy = 0
     try:
         precision = TP / (TP + FP1 + FP2)
     except:
@@ -248,7 +248,7 @@ def save_info(info, video_path):
     try:
         video_name = os.path.split(video_path)[-1][:-4]
         with open(video_name+'.csv', 'w') as file:
-            file.write("Frame,Ball,x,y\n")
+            file.write("Frame,Visibility,X,Y\n")
             for frame in info:
                 data = "{},{},{:.3f},{:.3f}".format(info[frame]["Frame"], info[frame]["Ball"],
                                             info[frame]["x"],info[frame]["y"])
