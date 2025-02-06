@@ -63,9 +63,9 @@ else:
 # >: fast forward 36 frames   #
 # <: fast backward 36 frames  #
 # # # # # # # # # # # # # # # #
-
+showdot = False
 def ball_label(event, x, y, flags, param):
-    global frame_no, info, image
+    global frame_no, info, image, showdot
     if event == cv2.EVENT_LBUTTONDOWN:
         h, w, _ = image.shape
         info[frame_no]['x'] = x/w
@@ -76,6 +76,8 @@ def ball_label(event, x, y, flags, param):
         info[frame_no]['x'] = -1
         info[frame_no]['y'] = -1
         info[frame_no]['Ball'] = 0
+    
+    showdot = True
 
 saved_success = False
 frame_no = 0
@@ -162,4 +164,6 @@ while True:
         image = go2frame(cap, frame_no, info)
         print("Frame No.{}".format(frame_no))
     else:
-        image = go2frame(cap, frame_no, info)
+        if showdot:
+            image = go2frame(cap, frame_no, info)
+            showdot = False
