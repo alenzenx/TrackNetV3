@@ -45,7 +45,54 @@ uv sync
 uv pip  install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117
 ```
 
+для запуска 
+способ 1 
+заменить python -> uv run 
+
+
+```
+uv run train.py --num_frame 3 --epochs 30 --batch_size 4 --learning_rate 0.001 --save_dir exp
+```
+
 Tested on Ubuntu 20.04 and 24.04
+
+
+### Training:
+
+```shell
+uv run train.py --num_frame 3 --epochs 30 --batch_size 4 --learning_rate 0.001 --save_dir exp
+```
+
+### Prediction:
+
+```shell
+uv run  predict.py --video_file=test.mp4 --model_file=exp/model_best.pt --save_dir pred_result
+```
+
+### Post-prediction usage: denoising and smoothing the badminton predicted curve
+
+```shell
+uv run  denoise.py --input_csv=pred_result/test_ball.csv
+```
+
+### After smoothing the badminton predicted curve: predicting the optimized video
+
+```shell
+uv run show_trajectory.py --video_file test.mp4 --csv_file pred_result/test_ball.csv --save_dir pred_result
+```
+
+### After smoothing the badminton prediction curve: predicting the moment of impact
+
+```shell
+uv run event_detection.py --input_csv=pred_result/test_ball.csv
+```
+
+
+## Alternative
+```shell
+source .venv/bin/action
+python script_name.py
+```
 
 
 
