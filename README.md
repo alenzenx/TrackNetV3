@@ -36,6 +36,19 @@ Paper : [Click to obtain TrackNetV3 paper](https://drive.google.com/file/d/1XIxR
 
 ![image](https://github.com/alenzenx/TracknetV3/blob/main/%E6%9C%80%E6%96%B0%E6%88%90%E6%9E%9C%E8%88%87%E5%8E%9F%E5%A7%8BTracknetV2%20model%E5%B0%8D%E6%AF%94/TrackNetV2/performance.jpg?raw=true)
 
+# Installation using UV Manager
+
+Install  [uv - manager ](https://docs.astral.sh/uv/getting-started/installation/) 
+
+```shell
+uv sync
+uv pip  install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117
+```
+
+Tested on Ubuntu 20.04 and 24.04
+
+
+
 # 環境建議:
 os system support : 
 1.     windows 10 
