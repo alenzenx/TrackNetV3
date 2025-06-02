@@ -65,7 +65,8 @@ h = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 success = True
 frame_count = 0
 num_final_frame = 0
-ratio = h / HEIGHT
+h_ratio = h / HEIGHT
+w_ratio = w / WIDTH
 out = cv2.VideoWriter(out_video_file, fourcc, fps, (w, h))
 
 while success:
@@ -123,7 +124,7 @@ while success:
         else:
             img = frame_queue[i].copy()
             cx_pred, cy_pred = get_object_center(h_pred[i])
-            cx_pred, cy_pred = int(ratio*cx_pred), int(ratio*cy_pred)
+            cx_pred, cy_pred = int(w_ratio*cx_pred), int(h_ratio*cy_pred)
             vis = 1 if cx_pred > 0 and cy_pred > 0 else 0
             # Write prediction result
             f.write(f'{frame_count-(num_frame*batch_size)+i},{vis},{cx_pred},{cy_pred}\n')
