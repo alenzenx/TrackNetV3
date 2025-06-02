@@ -1,0 +1,15 @@
+[project]
+name = "tracknetv3-alenzenx"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "matplotlib>=3.8.4",
+    "numpy==1.22.4",
+    "opencv-python>=4.7.0.72",
+    "pandas>=1.5.1",
+    "parse>=1.20.2",
+    "tensorflow==2.10.0",
+    "tqdm>=4.67.1",
+]
